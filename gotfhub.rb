@@ -5,23 +5,23 @@
 class Gotfhub < Formula
   desc ""
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/gotfhub/releases/download/0.0.5/gotfhub_0.0.5_darwin_amd64.tar.gz"
-      sha256 "87faa29b42fbcd3aafce81c43d60535dc03fcfe20c54530fe52eb27cb9749c18"
+      url "https://github.com/planesailingio/gotfhub/releases/download/0.0.6/gotfhub_0.0.6_darwin_amd64.tar.gz"
+      sha256 "635fbc91a75a37d1342d0ccca0af309a713f7f69533a240f6e81730af788ffa8"
 
       def install
-        bin.install "bin/0.0.5/darwin/amd64/gotfhub"
+        bin.install "bin/0.0.6/darwin/amd64/gotfhub"
       end
     end
     on_arm do
-      url "https://github.com/planesailingio/gotfhub/releases/download/0.0.5/gotfhub_0.0.5_darwin_arm64.tar.gz"
-      sha256 "009c34b6486e2b553d3444a88d09b864e0389e9971d2beb2d95b5438eb06d503"
+      url "https://github.com/planesailingio/gotfhub/releases/download/0.0.6/gotfhub_0.0.6_darwin_arm64.tar.gz"
+      sha256 "1ba5d21546e2cd6a305d86dd7c732b95e74bebcad52fad141d3732202ee41ca9"
 
       def install
-        bin.install "bin/0.0.5/darwin/arm64/gotfhub"
+        bin.install "bin/0.0.6/darwin/arm64/gotfhub"
       end
     end
   end
@@ -29,21 +29,21 @@ class Gotfhub < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/gotfhub/releases/download/0.0.5/gotfhub_0.0.5_linux_amd64.tar.gz"
-        sha256 "85eac53d6d393580d959733703c1bffdb48e2f569507429d7c0fca11d3ccd13f"
+        url "https://github.com/planesailingio/gotfhub/releases/download/0.0.6/gotfhub_0.0.6_linux_amd64.tar.gz"
+        sha256 "6285d403c5828c25d746cda9b6201d58ec5a5cc33122b010514ab1084cc338fa"
 
         def install
-          bin.install "bin/0.0.5/linux/amd64/gotfhub"
+          bin.install "bin/0.0.6/linux/amd64/gotfhub"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/gotfhub/releases/download/0.0.5/gotfhub_0.0.5_linux_arm64.tar.gz"
-        sha256 "3949f1c5bf22b7a56a2b414fadedfbed3a39f7481456fb6a77f16f4570357bf6"
+        url "https://github.com/planesailingio/gotfhub/releases/download/0.0.6/gotfhub_0.0.6_linux_arm64.tar.gz"
+        sha256 "324473a9ff08baa292019a97804e9479800366ed4380ed4958bde24137a12d4e"
 
         def install
-          bin.install "bin/0.0.5/linux/arm64/gotfhub"
+          bin.install "bin/0.0.6/linux/arm64/gotfhub"
         end
       end
     end
