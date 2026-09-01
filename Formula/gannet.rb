@@ -5,28 +5,28 @@
 class Gannet < Formula
   desc "Lightweight package manager for GitHub release binaries"
   homepage "https://github.com/planesailingio/gannet"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.8.0/gannet-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9ca6f5ea8bcddc4e13b6a3982dd7cf7e3e1e53c69af7c3c7a8a55236eee17380"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.8.1/gannet-v0.8.1-aarch64-apple-darwin.tar.gz"
+      sha256 "ed8a86be0cb1db65c84813847e494063858ced14aa3d4a2a349fcac1f722d960"
     end
     on_intel do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.8.0/gannet-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e5729d663cfb0ef14c7d20309ccd9404ef27bd418be3ffa4c56cfde3a936ee9e"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.8.1/gannet-v0.8.1-x86_64-apple-darwin.tar.gz"
+      sha256 "17309538d3de2eecb8ff8fe21b842ce8aa245658cea12e580dd33cc11e216dc2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.8.0/gannet-v0.8.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0f9e8b66880c7ad7d3294b846b3e8e9f205083f6e60feca8d04d06e5d188a908"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.8.1/gannet-v0.8.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1326fd4928f9e8fae80d8d2cc8c7d889655bb25be044ff68b415bc4392fb3715"
     end
     on_intel do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.8.0/gannet-v0.8.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ae78e822f2d0f55a1bd296994b77bd3eee262cf177b6fcdc756fee1325498d73"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.8.1/gannet-v0.8.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "658cf809b7a928c8d3ce00cde3ac3b434a9db4abfded961f60e39433fec05c9c"
     end
   end
 
