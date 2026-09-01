@@ -5,33 +5,36 @@
 class Gannet < Formula
   desc "Lightweight package manager for GitHub release binaries"
   homepage "https://github.com/planesailingio/gannet"
-  version "0.6.5"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.6.5/gannet-v0.6.5-aarch64-apple-darwin.tar.gz"
-      sha256 "5e1abbbf437cb314e990fd10ea230914720bcfdeef2a52a0d71e01e90f8213ba"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.7.0/gannet-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4143c0029c0b1f050418812738b4c4e81a483838d98dcaf1fdcc72d04796a815"
     end
     on_intel do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.6.5/gannet-v0.6.5-x86_64-apple-darwin.tar.gz"
-      sha256 "e96bdd2aee91c631bff11d9e406165a1dfb071388096b2b34813ba4795df5f79"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.7.0/gannet-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "b13a7e47a0805c74198f1986fbbcbe8c4e20a8d66961480b288d7df89b56dcb5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.6.5/gannet-v0.6.5-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7dea7a4fe8d0eedabcf4e5d63138297e8969673f641945c7ffc40df475d42b4b"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.7.0/gannet-v0.7.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "0ee64ccdfa0fac43febba1ceb6f3cdb479a4071cb67427f652ce443ad93d56b7"
     end
     on_intel do
-      url "https://github.com/planesailingio/gannet/releases/download/v0.6.5/gannet-v0.6.5-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "640eb24338c10e684f47ef96e8d617ba91787024ce76d28186b93f343d084f58"
+      url "https://github.com/planesailingio/gannet/releases/download/v0.7.0/gannet-v0.7.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b2ed6aa3e07507db748d3b50bf4487a22eb3813a00b3fe7860a87059358b2a54"
     end
   end
 
   def install
     bin.install "gannet"
+    bash_completion.install "completions/gannet.bash" => "gannet"
+    zsh_completion.install "completions/_gannet"
+    fish_completion.install "completions/gannet.fish"
   end
 
   test do
