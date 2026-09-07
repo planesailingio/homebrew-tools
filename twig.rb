@@ -5,21 +5,21 @@
 class Twig < Formula
   desc "Opinionated Git repository bootstrapper with Grove worktrees"
   homepage "https://github.com/planesailingio/twig"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/twig/releases/download/v0.8.1/twig_0.8.1_x86_64-apple-darwin.tar.gz"
-      sha256 "26aba28b8d903cc226d533a97b0e170ba21360e8078764cbc0e60f4eeb058261"
+      url "https://github.com/planesailingio/twig/releases/download/v0.8.2/twig_0.8.2_x86_64-apple-darwin.tar.gz"
+      sha256 "6230f4f9adec39398027a662268715079194d65a94c0a78e0aec758fbf081752"
 
       def install
         bin.install "bin/twig"
       end
     end
     on_arm do
-      url "https://github.com/planesailingio/twig/releases/download/v0.8.1/twig_0.8.1_aarch64-apple-darwin.tar.gz"
-      sha256 "82aeabd600b09875f5b96336c0f80908f086b1959202526fd821ff544095ce01"
+      url "https://github.com/planesailingio/twig/releases/download/v0.8.2/twig_0.8.2_aarch64-apple-darwin.tar.gz"
+      sha256 "4e963e7461c258b7ea758884377ca1335338f4e86b6b6680a30bf1224516bacc"
 
       def install
         bin.install "bin/twig"
@@ -30,8 +30,8 @@ class Twig < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/twig/releases/download/v0.8.1/twig_0.8.1_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "d7d5096d945e9ff51cd4dd66d4251844cb5fe457b8eb9b5598484979d33439bc"
+        url "https://github.com/planesailingio/twig/releases/download/v0.8.2/twig_0.8.2_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "5a769410304af37fa190869ad33fe1edd06fa6638d353ffe3204c52478fd0019"
 
         def install
           bin.install "bin/twig"
@@ -40,8 +40,8 @@ class Twig < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/twig/releases/download/v0.8.1/twig_0.8.1_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "11ae24be40d500e5ae418b8bbbf8d3b5ecfdea4f53957df5b89443d1b0f913ee"
+        url "https://github.com/planesailingio/twig/releases/download/v0.8.2/twig_0.8.2_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "69f14dd191f11707ef6313f665b77e06fce889de6c3b097a4359df53d7835a1d"
 
         def install
           bin.install "bin/twig"
