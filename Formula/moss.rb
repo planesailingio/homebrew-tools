@@ -5,7 +5,7 @@
 class Moss < Formula
   desc "Cross-platform user-profile backup and restore on top of Kopia"
   homepage "https://github.com/planesailingio/moss"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   # Kopia is the backup engine; moss shells out to it (spec §45).
@@ -13,26 +13,26 @@ class Moss < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/moss/releases/download/v0.7.1/moss_0.7.1_x86_64-apple-darwin.tar.gz"
-      sha256 "000dbfbccbb4455d5c9bea085b63e51987c9c83ed0a3487511adca5fcaea4c88"
+      url "https://github.com/planesailingio/moss/releases/download/v0.7.2/moss_0.7.2_x86_64-apple-darwin.tar.gz"
+      sha256 "410428c641d367b7d2c379c8f6e88a3b715552bddfb950ff279df5c98396a4e2"
     end
     on_arm do
-      url "https://github.com/planesailingio/moss/releases/download/v0.7.1/moss_0.7.1_aarch64-apple-darwin.tar.gz"
-      sha256 "0671d75def6d1199773bb2e9887cb799f75cf438591a844246e3bb955afd0fac"
+      url "https://github.com/planesailingio/moss/releases/download/v0.7.2/moss_0.7.2_aarch64-apple-darwin.tar.gz"
+      sha256 "427feaa2da09ebd43796c2037f9dc33d7b6caba4ab51eaea0d3a65ffdb1a4c48"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/moss/releases/download/v0.7.1/moss_0.7.1_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "7769a56a4cb1c6b097f161865ecceb61d93ae38c94dadb0d5b710b903890d43f"
+        url "https://github.com/planesailingio/moss/releases/download/v0.7.2/moss_0.7.2_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "c2671314c77c5c3f7bda69f738ef314cb977eb5f9f81e93bfe253fe42a35d615"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/moss/releases/download/v0.7.1/moss_0.7.1_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "7db6891b1a6e8d7cb381b47c855f341defbec3eaf6de71c7faa4b7729a44c03f"
+        url "https://github.com/planesailingio/moss/releases/download/v0.7.2/moss_0.7.2_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "e9ae5ec561fc5fc23dbb559dc73e3730b6b1dd7c9cc35ae923f28c8dcaa618f1"
       end
     end
   end
