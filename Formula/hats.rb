@@ -16,6 +16,11 @@ class Hats < Formula
   # system service Homebrew does not manage, and `hats doctor` says so.
   depends_on "age-plugin-yubikey"
 
+  # The worktree manager hats drives for per-client checkouts. Fully qualified
+  # so it always resolves to this tap, even if homebrew-core later ships a
+  # formula of the same name.
+  depends_on "planesailingio/tools/grove"
+
   # git is the only other hard requirement, and every machine with a dotfiles
   # repo already has it. fzf and kubectl are optional and reported by
   # `hats doctor`.
