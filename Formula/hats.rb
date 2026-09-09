@@ -23,11 +23,11 @@ class Hats < Formula
   on_macos do
     on_intel do
       url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-apple-darwin.tar.gz"
-      sha256 "77fa3d039e600ffae7fc349d9ddbd09b1cf8aefc06885a0a0179c550c8d684cc"
+      sha256 "f92446d101f3b55504143ae9c5670fe950f447cbfdfcf2e495c33b412f09f4f1"
     end
     on_arm do
       url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-apple-darwin.tar.gz"
-      sha256 "9b08f4f91e6abd8f51b55578aefa16c2997bce236a6c9d635b599674392e613a"
+      sha256 "37bef2fef3c7caf00b3830885983e4256e5cd02e229071841af03154be579645"
     end
   end
 
@@ -35,13 +35,13 @@ class Hats < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "00832e2d3645a71aead889d8d58535e18f891d9efa2dd302a6ab3e514202e656"
+        sha256 "92bf2af143ca996140013e9ee4f57915c36f1d197b0f2638f6ae1683d6b3e770"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "d9e29920f40515459fc802bd285c90d5b74e86eb6ae80e164f377e0105cea585"
+        sha256 "e6293e977d8e8622e032a52b0323c8b6cbf7c2404fe85d2dd15e6d416b8e2ff2"
       end
     end
   end
