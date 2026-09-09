@@ -5,7 +5,7 @@
 class Hats < Formula
   desc "One laptop, many hats: dotfiles and per-shell client contexts"
   homepage "https://github.com/planesailingio/hats"
-  version "0.3.0"
+  version "0.5.0"
   license "MIT"
 
   # The age plugin that unseals the credential envelope. hats drives it as a
@@ -22,26 +22,26 @@ class Hats < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/hats/releases/download/v0.3.0/hats_0.3.0_x86_64-apple-darwin.tar.gz"
-      sha256 "244f1586c0232fd5a21e43f6d3176084b91d903c2d2cbc52c680866704755f78"
+      url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-apple-darwin.tar.gz"
+      sha256 "77fa3d039e600ffae7fc349d9ddbd09b1cf8aefc06885a0a0179c550c8d684cc"
     end
     on_arm do
-      url "https://github.com/planesailingio/hats/releases/download/v0.3.0/hats_0.3.0_aarch64-apple-darwin.tar.gz"
-      sha256 "df708a9f62c5e2dce3dffe3bed0f22d5b31e684f8f73a13444d662b2fdfa9b63"
+      url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-apple-darwin.tar.gz"
+      sha256 "9b08f4f91e6abd8f51b55578aefa16c2997bce236a6c9d635b599674392e613a"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.3.0/hats_0.3.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "dbc85d15d6c3770a69dd47c32da3035b0cae7793910793bec895ae13f93e2ac7"
+        url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "00832e2d3645a71aead889d8d58535e18f891d9efa2dd302a6ab3e514202e656"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.3.0/hats_0.3.0_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "db411cff62d55c096ca2d091a748ec464b3b8373fd817421219ae636f27ec8f2"
+        url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "d9e29920f40515459fc802bd285c90d5b74e86eb6ae80e164f377e0105cea585"
       end
     end
   end
