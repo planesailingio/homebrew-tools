@@ -5,7 +5,7 @@
 class Hats < Formula
   desc "One laptop, many hats: dotfiles and per-shell client contexts"
   homepage "https://github.com/planesailingio/hats"
-  version "0.5.0"
+  version "0.5.2"
   license "MIT"
 
   # The age plugin that unseals the credential envelope. hats drives it as a
@@ -16,37 +16,32 @@ class Hats < Formula
   # system service Homebrew does not manage, and `hats doctor` says so.
   depends_on "age-plugin-yubikey"
 
-  # The worktree manager hats drives for per-client checkouts. Fully qualified
-  # so it always resolves to this tap, even if homebrew-core later ships a
-  # formula of the same name.
-  depends_on "planesailingio/tools/grove"
-
   # git is the only other hard requirement, and every machine with a dotfiles
   # repo already has it. fzf and kubectl are optional and reported by
   # `hats doctor`.
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-apple-darwin.tar.gz"
-      sha256 "f92446d101f3b55504143ae9c5670fe950f447cbfdfcf2e495c33b412f09f4f1"
+      url "https://github.com/planesailingio/hats/releases/download/v0.5.2/hats_0.5.2_x86_64-apple-darwin.tar.gz"
+      sha256 "90bcefa9f11bd1fc5e6f7c6e8a7d815aaccd87410852a683700cbb3fc98682fc"
     end
     on_arm do
-      url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-apple-darwin.tar.gz"
-      sha256 "37bef2fef3c7caf00b3830885983e4256e5cd02e229071841af03154be579645"
+      url "https://github.com/planesailingio/hats/releases/download/v0.5.2/hats_0.5.2_aarch64-apple-darwin.tar.gz"
+      sha256 "638e5f39aacbf07d9a6661a9663f692ab3ce57f487e135a9783f726adfefb0f3"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "92bf2af143ca996140013e9ee4f57915c36f1d197b0f2638f6ae1683d6b3e770"
+        url "https://github.com/planesailingio/hats/releases/download/v0.5.2/hats_0.5.2_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "e756ac17ad2b4f6f1fed081b332b5917e395a74e1d4ad6f93f5354685371680a"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.5.0/hats_0.5.0_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "e6293e977d8e8622e032a52b0323c8b6cbf7c2404fe85d2dd15e6d416b8e2ff2"
+        url "https://github.com/planesailingio/hats/releases/download/v0.5.2/hats_0.5.2_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "69c7c2d910045ab0174241dff3801040b37f78f5da3755280bde39428ca92ce2"
       end
     end
   end
