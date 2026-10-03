@@ -5,7 +5,7 @@
 class Bosun < Formula
   desc "Machine and shell bootstrap: dotfiles, brew bundles and hooks"
   homepage "https://github.com/planesailingio/bosun"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   # git is the only hard requirement, and every machine with a dotfiles repo
@@ -13,26 +13,26 @@ class Bosun < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/bosun/releases/download/v0.1.0/bosun_0.1.0_x86_64-apple-darwin.tar.gz"
-      sha256 "da629863dd8009fdbad27614b565227d59d4cc19a1608953a9fd0f0ab2711bd0"
+      url "https://github.com/planesailingio/bosun/releases/download/v0.2.0/bosun_0.2.0_x86_64-apple-darwin.tar.gz"
+      sha256 "ea5bc5e0fcd69bd92554d10023489934a1a4928e08a2c11c0b33e0c18a6c2d10"
     end
     on_arm do
-      url "https://github.com/planesailingio/bosun/releases/download/v0.1.0/bosun_0.1.0_aarch64-apple-darwin.tar.gz"
-      sha256 "4ac3878d2995b905389baa1e7dbfe818222fe47110fc050e79d12099edfe008b"
+      url "https://github.com/planesailingio/bosun/releases/download/v0.2.0/bosun_0.2.0_aarch64-apple-darwin.tar.gz"
+      sha256 "5592f7b3475ad2c58d124d854ccdd5afb802c78c7a522239d3ebe5a86b0af41c"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/bosun/releases/download/v0.1.0/bosun_0.1.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "a807b1172d9d730819c40e68c1aae8f040faee0c54587d5d43718885398a4ed0"
+        url "https://github.com/planesailingio/bosun/releases/download/v0.2.0/bosun_0.2.0_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "8e6604651b7d313776fad1f8bce834a62693aae92765852fd60d1741392571e2"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/bosun/releases/download/v0.1.0/bosun_0.1.0_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "65a2da0f4b6bc73ec5b2c7e7adee55236d4617f52b3b25699edac226fb9e10d5"
+        url "https://github.com/planesailingio/bosun/releases/download/v0.2.0/bosun_0.2.0_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "8d11f830eac1aeaa2bb2acdc3b95611d653200c920dd037db836bb2382e11d4b"
       end
     end
   end
