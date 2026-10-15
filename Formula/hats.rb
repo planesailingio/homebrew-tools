@@ -5,7 +5,7 @@
 class Hats < Formula
   desc "One laptop, many hats: per-shell client contexts and tool isolation"
   homepage "https://github.com/planesailingio/hats"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   # The age plugin that unseals the credential envelope. hats drives it as a
@@ -21,26 +21,26 @@ class Hats < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/planesailingio/hats/releases/download/v0.12.0/hats_0.12.0_x86_64-apple-darwin.tar.gz"
-      sha256 "d4051aa8496aa9b20dab98d372028cd7701aa675c15a439607cac9badd67093d"
+      url "https://github.com/planesailingio/hats/releases/download/v0.13.0/hats_0.13.0_x86_64-apple-darwin.tar.gz"
+      sha256 "0de4a44890f2981c3969cc1df7e4b1a50b1d2af63d7e6a3fa66c8547662a3ba2"
     end
     on_arm do
-      url "https://github.com/planesailingio/hats/releases/download/v0.12.0/hats_0.12.0_aarch64-apple-darwin.tar.gz"
-      sha256 "dc36999c0bb3ddb6808df9bff0e9bf87846f58d3f826846b82709ea1fa2d3ee2"
+      url "https://github.com/planesailingio/hats/releases/download/v0.13.0/hats_0.13.0_aarch64-apple-darwin.tar.gz"
+      sha256 "0f9b18e3714b6c595773be5e4f82226ed7981f5190199e690c920f874dc9d8a1"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.12.0/hats_0.12.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "99cf9fd37d5101053cef4ef3de1f0d7c615adc703de3346e99f878eee085d412"
+        url "https://github.com/planesailingio/hats/releases/download/v0.13.0/hats_0.13.0_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "62ce0f9b896331928f000ec1cff21777da77bbfdd8b4c159e638f59a7901102c"
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/planesailingio/hats/releases/download/v0.12.0/hats_0.12.0_aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "7d3aab3ac24ee0db61ce8608fb3575c749a0f0178b25e3cb1b7447b38828fffb"
+        url "https://github.com/planesailingio/hats/releases/download/v0.13.0/hats_0.13.0_aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "dee8033a83331faba8a869dd42fe5ea16b7ac33f95cc35e051e88f3fa99df1fa"
       end
     end
   end
